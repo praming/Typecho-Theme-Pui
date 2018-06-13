@@ -41,7 +41,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			<!--分页-->			
 			
 			<div class="page-nav">
-				<?php $this->pageNav('<i class="icon">&#xe603;</i>', '<i class="icon">&#xe602;</i>',2,'...',array('wrapTag' => 'ul', 'wrapClass' => 'pagination','itemTag' => 'li','currentClass' => 'active',)); ?>
+				<?php $this->pageNav('<i class="iconfont">&#xe65c;</i>', '<i class="iconfont">&#xe65d;</i>',2,'...',array('wrapTag' => 'ul', 'wrapClass' => 'pagination','itemTag' => 'li','currentClass' => 'active',)); ?>
 			</div>		 
 		</div>
 		<div class="page-sub">			

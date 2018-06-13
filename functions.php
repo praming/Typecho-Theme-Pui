@@ -2,7 +2,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
-    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点 LOGO 地址'), _t('在这里填入一个图片 URL 地址, 以在网站标题前加上一个 LOGO。如：/usr/themes/Ice/img/logo.png'));
+    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点 LOGO 地址'), _t('在这里填入一个图片 URL 地址, 以在网站标题前加上一个 LOGO。如：/usr/themes/pui/img/logo.png'));
     $form->addInput($logoUrl);
     
     $sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock', 
@@ -68,7 +68,7 @@ function themeFields($layout) {
 function showThumbnail($widget)
 { 
     // 当文章无图片时的默认缩略图
-    $dir = './usr/themes/ice/img/sj/';//随机缩略图目录
+    $dir = './usr/themes/pui/img/sj/';//随机缩略图目录
     $n=sizeof(scandir($dir))-2;
     if($n <= 0){
     $n=99;
@@ -110,7 +110,7 @@ else
 if ($widget->tags) {
 foreach ($widget->tags as $tag) {
 
-    $ctu = './usr/themes/ice/img/tag/' . $tag['slug'] . '.jpg';
+    $ctu = './usr/themes/pui/img/tag/' . $tag['slug'] . '.jpg';
 
     if(is_file($ctu))
     { 
